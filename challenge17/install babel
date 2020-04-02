@@ -1,0 +1,24 @@
+npm i babel-cli -g
+
+
+//Install local
+npm init
+npm i babel-preset-es2015 -S
+
+
+
+
+//Usage
+Via .babelrc (Recommended)
+
+.babelrc
+ketik :
+{
+  "presets": ["es2015"]
+}
+
+Via CLI
+
+babel script.js --presets es2015
+
+
