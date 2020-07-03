@@ -7,7 +7,7 @@ class mobil {
     this.transmisi = transmisi;
     this.tahun = tahun;
     this.garansi = garansi 
-    this.noMesin = noMesin;
+    this.noMesin = noMesin();
   }
 }
 function noMesin() {
@@ -60,7 +60,7 @@ class rakit {
     this.cars.forEach((item, i) => {
       console.log(`
 ${i + 1}.
-NoMesin: ${item.mobil.NoMesin}
+NoMesin: ${item.noMesin}
 Transmisi: ${item.transmisi}
 Type : ${item.type}
 Pintu : ${item.pintu}
